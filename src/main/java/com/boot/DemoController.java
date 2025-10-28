@@ -19,8 +19,9 @@ public class DemoController {
 
     @RequestMapping("/hello.do")
     public String hello(Model model){
-        log.info("안녕하세요! 111 222 333 444 555");
+        log.info("안녕하세요! 111 222 333 444 666");
         model.addAttribute("message","hello.jsp 입니다!");
+        //git config pull.rebase false
 
         return "hello";
     }
